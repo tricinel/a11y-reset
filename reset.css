@@ -1,0 +1,113 @@
+@layer a11y-reset {
+  /* Default line height should be 1.5 for readability */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Prevent font size inflation on some devices */
+  html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+  }
+
+  /* Remove built-in form typography */
+  input, button, textarea, select {
+    color: inherit;
+    font: inherit;
+  }
+
+  /* Some elements should have the pointer cursor */
+  button, label, select, summary, [role='button'], [role='option'] {
+    cursor: pointer;
+  }
+
+  /* And some should have the not-allowed cursor */
+  :disabled, [aria-disabled='true'], label:has(> input:disabled), label:has(+ input:disabled) {
+    cursor: not-allowed;
+  }
+
+  /* Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  /* Balance text wrapping on higher level headings */
+  h1, h2, h3 {
+    line-height: calc(1em + 0.5rem);
+    text-wrap: balance;
+  }
+
+  /* Increase textarea heights when rows aren't set */
+  textarea:not([rows]) {
+    min-height: 10em;
+  }
+
+  /* Make sure text decoration won't interfere with font ascenders and descenders */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+
+  /* Anchored elements should have some extra padding */
+  :target {
+    scroll-padding-block-start: 2rem;
+  }
+
+  /* Focused elements should also */
+  :focus {
+    scroll-padding-block-end: 8vh;
+  }
+
+  /* Ensure a nice focus indicator */
+  :is(a, button, input, textarea, select, summary) {
+    --outline-size: max(2px, 0.08em);
+    --outline-style: dashed;
+    --outline-offset: -0.32em;
+    --outline-color: currentColor;
+  }
+
+  :is(a, button, input, textarea, select, summary):focus,
+  :is(a, button, input, textarea, select, summary):focus-visible {
+    outline: var(--outline-size) var(--outline-style) var(--outline-color);
+    outline-offset: var(--outline-offset, var(--outline-size));
+  }
+
+  :is(a, button, input, textarea, select, summary):focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  button {
+    --outline-offset: -0.32em;
+  }
+
+  a {
+    --outline-offset: 0.08em;
+  }
+
+  /* A visually hidden class that still shows up for screen readers */
+  .visually-hidden, .sr-only {
+    position: absolute;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  /* Prefers reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::after,
+    *::before {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}

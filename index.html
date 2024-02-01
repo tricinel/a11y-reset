@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="reset.css">
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Heading 1</h1>
+    </header>
+
+    <main>
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li> <a href="/" title="Home">Home</a> </li>
+          <li> <a href="/" title="About">About</a> </li>
+          <li> <a href="/" title="Contact">Contact</a> </li>
+        </ul>
+      </nav>
+
+      <!-- Article -->
+      <section>
+        <article>
+          <h2>Heading 2</h2>
+          <time datetime="2024-01-01" pubdate>01 February 2024</time>
+          <figure>
+            <img src="https://placekitten.com/g/1140/640" alt="A kitten">
+            <figcaption>
+              Photo of a kitten.</a>
+            </figcaption>
+          </figure>
+          <p>Sint eiusmod sint tempor dolor occaecat, mollit do. Tempor dolor occaecat mollit, do qui tempor. Mollit do qui tempor dolor ex. Qui tempor dolor ex proident incididunt. Dolor, ex proident incididunt reprehenderit. Incididunt reprehenderit, ipsum veniam. Veniam reprehenderit, deserunt mollit. Mollit et cillum aute est. Cillum aute est laborum ut sed elit.</p>
+          <blockquote>
+            <p>
+              This is a GREAT pull quote.
+            </p>
+            <a href="#">- Author</a>
+          </blockquote>
+          <h2>Heading 3</h2>
+          <p>Et sunt ipsum laboris ad amet, anim. Laboris, ad amet anim labore pariatur tempor. Anim labore pariatur tempor. Pariatur tempor magna duis ut mollit adipiscing. Magna duis ut mollit, adipiscing sed qui labore. Mollit adipiscing sed qui labore cupidatat nisi. Sed qui labore cupidatat nisi magna. Labore, cupidatat nisi magna adipiscing eu. Magna adipiscing, eu commodo ad qui ad lorem.</p>
+          <h4>Heading 4</h4>
+          <p>Deserunt est elit duis labore labore, aute. Duis labore labore aute aute consequat consectetur. Labore aute aute consequat, consectetur. Consequat consectetur nostrud aliquip sed elit cillum. Nostrud aliquip, sed elit cillum laborum. Elit cillum, laborum eu deserunt eu. Eu deserunt eu veniam. Eu veniam, amet sed exercitation. Sed, exercitation esse sed labore eu ut fugiat.</p>
+          <h5>Heading 5</h5>
+          <p>Laboris, nulla consequat aute. Aute do veniam nulla ad incididunt veniam ea. Veniam nulla ad incididunt. Ad incididunt veniam ea qui proident incididunt officia. Veniam ea qui proident incididunt officia quis. Qui proident incididunt officia quis qui. Incididunt officia quis qui velit lorem, ut id. Qui velit lorem ut id.</p>
+          <h6>Heading 6</h6>
+          <p>Consequat, excepteur minim quis. Quis amet elit ea. Elit ea et magna sint, culpa nulla commodo. Magna sint culpa nulla commodo. Culpa nulla commodo enim ipsum. Commodo, enim ipsum reprehenderit consectetur sit nostrud sit. Reprehenderit, consectetur sit nostrud sit. Nostrud sit tempor aliqua aute et velit, incididunt. Aliqua aute et velit incididunt laboris aute ullamco.</p>
+          <code>
+            <pre>
+              sudo ipfw pipe 1 config bw 256KByte/s
+              sudo ipfw add 1 pipe 1 src-port 3000
+            </pre>
+          </code>
+          <small>This is for things like copyright info</small>
+          <span>Generic span wrapper</span>
+          <abbr>HTML</abbr>
+          <p>This is inline text with <sub>subscript</sub> and <sup>superscript</sup> elements.</p>
+        </article>
+
+        <hr />
+        <p><a href="#">Link text</a></p>
+      </section>
+
+      <!-- Lists -->
+      <section>
+        <p>Unordered list</p>
+        <ul>
+          <li>Orange</li>
+          <li>Apple</li>
+          <li>Rhubarb</li>
+          <li>Rasberry</li>
+          <li>Blueberry</li>
+          <li>Cherry</li>
+        </ul>
+        <p>Ordered list</p>
+        <ol>
+          <li>First</li>
+          <li>Second</li>
+          <li>Third</li>
+          <li>Fourth</li>
+          <li>Fifth</li>
+          <li>Sixth</li>
+        </ol>
+        <p>Definition list</p>
+        <dl>
+          <dt>A11Y</dt>
+          <dd>Accessibility</dd>
+          <dt>ACR</dt>
+          <dd>Accessibility Conformance Report</dd>
+          <dt>ADA</dt>
+          <dd>Americans with Disabilities Act</dd>
+        </dl>
+      </section>
+
+      <!-- Forms -->
+      <section>
+        <form>
+          <fieldset>
+            <legend>Fielset legend</legend>
+
+            <label for="text">Text input</label>
+            <input type="text" id="text" />
+
+            <label for="text">Text input with value</label>
+            <input type="text" id="text" value="My value" />
+
+            <label for="text">Text input complete</label>
+            <input type="text" id="text" placeholder="Type here" aria-describedby="input-error input-hint" />
+            <p id="input-hint">Some hint</p>
+            <p id="input-error">Some error</p>
+
+            <label for="password">Password input</label>
+            <input type="password" id="password" />
+
+            <label for="email">Email input</label>
+            <input type="email" id="email" />
+
+            <label for="number">Number input</label>
+            <input type="number" id="number" />
+
+            <label for="url">URL input</label>
+            <input type="url" id="url" />
+
+            <label for="dropdown">Dropdown</label>
+            <select id="dropdown">
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+            </select>
+
+            <label><input type="radio" name="radio" /> Label 1</label>
+            <label><input type="radio" name="radio" /> Label 2</label>
+            <label><input type="radio" name="radio" /> Label 3</label>
+
+            <label for="textarea">Text area</label>
+            <textarea id="textarea"></textarea>
+
+            <label><input type="checkbox" /> This is a checkbox.</label>
+
+            <progress value="80" max="100">80 %</progress>
+
+            <input type="submit" value="Submit" />
+            <button>A button</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <!-- Table -->
+      <section>
+        <table>
+          <caption>This is a caption for a table</caption>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <td>Table footer info</td>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>#1</td>
+              <td>First Name</td>
+              <td>1 February, 2024</td>
+            </tr>
+            <tr>
+              <td>#2</td>
+              <td>Second Name</td>
+              <td>2 February, 2024</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; Copyright 2024. <small>© 2014 Some company name</small>. <address>email@email.com</address>
+      </p>
+      <ul>
+        <li>
+          <a href="http://twitter.com" title="X">X</a>
+        </li>
+        <li>
+          <a href="http://github.com" title="Github">Github</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

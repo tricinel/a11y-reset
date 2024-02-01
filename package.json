@@ -1,0 +1,29 @@
+{
+  "name": "a11y-reset",
+  "version": "1.0.0",
+  "description": "A style reset specifically aimed at accessibility that embraces modern CSS features to help start your project without accessibility errors",
+  "type": "module",
+  "files": [
+    "reset.css"
+  ],
+  "main": "reset.css",
+  "exports": {
+    ".": "./reset.css"
+  },
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "css",
+    "reset"
+  ],
+  "author": "Bogdan Lazar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tricinel/a11y-reset.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tricinel/a11y-reset/issues"
+  },
+  "homepage": "https://github.com/tricinel/a11y-reset#readme"
+}
