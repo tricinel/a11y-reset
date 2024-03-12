@@ -1,6 +1,6 @@
 {
   "name": "a11y-reset",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A style reset specifically aimed at accessibility that embraces modern CSS features to help start your project without accessibility errors",
   "type": "module",
   "files": [
